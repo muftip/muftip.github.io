@@ -4,87 +4,89 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portofolio Mufti</title>
-  <link rel="icon" href="https://via.placeholder.com/32" type="image/png"> <!-- Favicon -->
-
   <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script> <!-- Alpine.js for toggling dark mode -->
 </head>
-<body class="bg-gray-100 text-gray-800 min-h-screen flex flex-col transition-all duration-300 ease-in-out dark:bg-gray-900 dark:text-white">
+<body class="bg-gray-100 text-gray-800 min-h-screen">
 
   <!-- Navbar -->
-  <nav class="bg-white dark:bg-gray-800 shadow-md">
-    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-      <div class="text-xl font-bold text-blue-600 dark:text-blue-400">Mufti P.</div>
-
-      <!-- Burger Button -->
-      <button id="burger" class="md:hidden text-gray-700 dark:text-white focus:outline-none">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
-             viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <path stroke-linecap="round" stroke-linejoin="round"
-                d="M4 6h16M4 12h16M4 18h16"></path>
-        </svg>
-      </button>
-
-      <!-- Nav Links -->
-      <div id="menu" class="hidden md:flex space-x-6 text-sm md:text-base">
-        <a href="#skills" class="text-gray-700 dark:text-white hover:text-blue-600 dark:hover:text-blue-400">Skill</a>
-        <a href="#certificates" class="text-gray-700 dark:text-white hover:text-blue-600 dark:hover:text-blue-400">Sertifikat</a>
-        <a href="#experience" class="text-gray-700 dark:text-white hover:text-blue-600 dark:hover:text-blue-400">Pengalaman</a>
-        <a href="#projects" class="text-gray-700 dark:text-white hover:text-blue-600 dark:hover:text-blue-400">Proyek</a>
-        <a href="#contact" class="text-gray-700 dark:text-white hover:text-blue-600 dark:hover:text-blue-400">Kontak</a>
+  <nav class="bg-white shadow-md">
+    <div class="max-w-6xl mx-auto px-4 py-6 flex justify-between items-center">
+      <div class="text-2xl font-bold text-blue-600">Mufti P.</div>
+      <div class="flex space-x-8 text-lg">
+        <a href="#skills" class="text-gray-700 hover:text-blue-600">Skill</a>
+        <a href="#certificates" class="text-gray-700 hover:text-blue-600">Sertifikat</a>
+        <a href="#experience" class="text-gray-700 hover:text-blue-600">Pengalaman</a>
+        <a href="#projects" class="text-gray-700 hover:text-blue-600">Proyek</a>
+        <a href="#contact" class="text-gray-700 hover:text-blue-600">Kontak</a>
       </div>
-      
-      <!-- Dark Mode Toggle -->
-      <button id="dark-mode-toggle" class="text-gray-700 dark:text-white md:hidden focus:outline-none">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
-             viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <path stroke-linecap="round" stroke-linejoin="round"
-                d="M12 3v2m0 4V7m0 10h2m-4 0h2m6-4h2m-2-4h2m-4 6h2M12 3c5 0 9 4 9 9s-4 9-9 9s-9-4-9-9s4-9 9-9z"></path>
-        </svg>
-      </button>
-    </div>
-
-    <!-- Mobile Menu -->
-    <div id="mobileMenu" class="md:hidden hidden px-4 pb-4 space-y-2 bg-white dark:bg-gray-800 transition-transform transform -translate-x-full fixed inset-0 z-50">
-      <a href="#skills" class="block text-gray-700 dark:text-white hover:text-blue-600 dark:hover:text-blue-400">Skill</a>
-      <a href="#certificates" class="block text-gray-700 dark:text-white hover:text-blue-600 dark:hover:text-blue-400">Sertifikat</a>
-      <a href="#experience" class="block text-gray-700 dark:text-white hover:text-blue-600 dark:hover:text-blue-400">Pengalaman</a>
-      <a href="#projects" class="block text-gray-700 dark:text-white hover:text-blue-600 dark:hover:text-blue-400">Proyek</a>
-      <a href="#contact" class="block text-gray-700 dark:text-white hover:text-blue-600 dark:hover:text-blue-400">Kontak</a>
     </div>
   </nav>
 
   <!-- Content -->
   <main class="flex-grow flex items-center justify-center px-4 py-10">
     <div class="bg-white rounded-xl shadow-lg max-w-4xl w-full p-8 sm:p-12">
-      <h1 class="text-4xl font-bold text-center mb-6">Portofolio Mufti Purwalaksana</h1>
-      <p class="text-lg text-center mb-6">Saya seorang <strong>IT Support & Web Developer</strong> yang pernah bekerja di
+      <h1 class="text-5xl font-bold text-center mb-6">Portofolio Mufti Purwalaksana</h1>
+      <p class="text-xl text-center mb-6">Saya seorang <strong>IT Support & Web Developer</strong> yang pernah bekerja di
         <a href="https://remula-inti.com/" class="text-blue-600 hover:underline" target="_blank">PT Remula</a>.
       </p>
 
-      <!-- Sections: Skills, Certificates, Experience, Projects, Contact -->
-      <!-- Content omitted for brevity -->
+      <!-- Skill -->
+      <h2 id="skills" class="text-3xl font-semibold mt-6 mb-4">🧰 Skill</h2>
+      <ul class="list-disc ml-6">
+        <li class="text-lg">HTML, CSS, JavaScript</li>
+        <li class="text-lg">React, Laravel, PHP</li>
+        <li class="text-lg">MySQL, Git, GitHub, WordPress</li>
+        <li class="text-lg">REST API, Tailwind CSS, Bootstrap</li>
+      </ul>
 
+      <!-- Certificates -->
+      <h2 id="certificates" class="text-3xl font-semibold mt-6 mb-4">📜 Sertifikat</h2>
+      <ul class="list-disc ml-6">
+        <li class="text-lg">
+          Responsive Web Design – freeCodeCamp<br />
+          <a class="text-blue-600 hover:underline" href="https://www.freecodecamp.org/certification/fccfc107e90-7772-49db-a0db-04f5eb78935a/responsive-web-design" target="_blank">Lihat Sertifikat</a>
+        </li>
+        <li class="text-lg">
+          JavaScript Algorithms and Data Structures – freeCodeCamp<br />
+          <a class="text-blue-600 hover:underline" href="https://www.freecodecamp.org/certification/fccfc107e90-7772-49db-a0db-04f5eb78935a/javascript-algorithms-and-data-structures-v8" target="_blank">Lihat Sertifikat</a>
+        </li>
+        <li class="text-lg">
+          Profil – CodePolitan<br />
+          <a class="text-blue-600 hover:underline" href="https://www.codepolitan.com/coders/Mufti16/" target="_blank">Lihat Profil</a>
+        </li>
+      </ul>
+
+      <!-- Work Experience -->
+      <h2 id="experience" class="text-3xl font-semibold mt-6 mb-4">💼 Pengalaman Kerja</h2>
+      <ul class="list-disc ml-6">
+        <li class="text-lg">
+          <strong>IT Support – PT Remula</strong> (2016 – 2021)<br />
+          Menangani permasalahan teknis internal, pemeliharaan sistem, dan mendukung infrastruktur IT perusahaan.
+        </li>
+        <li class="text-lg">
+          <strong>Web Developer – PT Remula</strong> (2021 – 2024)<br />
+          Membuat dan mengelola aplikasi seperti sistem absensi dan pergudangan berbasis Laravel dan MySQL.
+        </li>
+      </ul>
+
+      <!-- Projects -->
+      <h2 id="projects" class="text-3xl font-semibold mt-6 mb-4">🔨 Proyek</h2>
+      <ul class="list-disc ml-6">
+        <li class="text-lg"><a href="https://github.com/muftip/Remula-gudang" target="_blank" class="text-blue-600 hover:underline">📦 Remula Gudang – Aplikasi Pergudangan</a></li>
+        <li class="text-lg"><a href="https://github.com/muftip/absensi" target="_blank" class="text-blue-600 hover:underline">🕒 Absensi – Sistem Kehadiran Karyawan</a></li>
+        <li class="text-lg"><a href="https://github.com/muftip" target="_blank" class="text-blue-600 hover:underline">🔗 Lihat semua proyek di GitHub</a></li>
+      </ul>
+
+      <!-- Contact -->
+      <h2 id="contact" class="text-3xl font-semibold mt-6 mb-4">✉️ Kontak</h2>
+      <p class="text-lg">
+        Email: <a href="mailto:muftipurwalaksana5@gmail.com" class="text-blue-600 hover:underline">muftipurwalaksana5@gmail.com</a>
+      </p>
+      <p class="text-lg">
+        GitHub: <a href="https://github.com/muftip" target="_blank" class="text-blue-600 hover:underline">github.com/muftip</a>
+      </p>
     </div>
   </main>
-
-  <!-- Toggle Script -->
-  <script>
-    const burger = document.getElementById("burger");
-    const menu = document.getElementById("menu");
-    const mobileMenu = document.getElementById("mobileMenu");
-    const darkModeToggle = document.getElementById("dark-mode-toggle");
-
-    // Toggle mobile menu visibility
-    burger.addEventListener("click", () => {
-      mobileMenu.classList.toggle("-translate-x-full");
-    });
-
-    // Toggle dark mode
-    darkModeToggle.addEventListener("click", () => {
-      document.body.classList.toggle("dark");
-    });
-  </script>
 
 </body>
 </html>
