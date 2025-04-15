@@ -1,158 +1,55 @@
+</body>
+</html>
 <!DOCTYPE html>
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portofolio Mufti</title>
-  <style>
-    /* Reset some default styles */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Arial', sans-serif;
-      background-color: #f7f7f7;
-      padding: 2rem;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-    }
-
-    .container {
-      background: white;
-      padding: 2rem;
-      border-radius: 8px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-      max-width: 800px;
-      width: 100%;
-    }
-
-    h1 {
-      font-size: 2.5rem;
-      color: #333;
-      text-align: center;
-      margin-bottom: 1.5rem;
-    }
-
-    h2 {
-      font-size: 1.8rem;
-      color: #444;
-      margin-top: 2rem;
-      margin-bottom: 1rem;
-    }
-
-    p {
-      color: #555;
-      font-size: 1rem;
-      line-height: 1.6;
-      margin-bottom: 1rem;
-    }
-
-    a {
-      color: #007bff;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    ul {
-      list-style-type: none;
-      padding-left: 0;
-    }
-
-    li {
-      margin-bottom: 1rem;
-      font-size: 1rem;
-      color: #555;
-    }
-
-    .contact p {
-      margin: 0.5rem 0;
-    }
-
-    .btn {
-      display: inline-block;
-      margin-top: 0.3rem;
-      padding: 8px 16px;
-      background-color: #007bff;
-      color: white;
-      border-radius: 4px;
-      font-size: 14px;
-      text-decoration: none;
-      text-align: center;
-      transition: background-color 0.3s ease;
-    }
-
-    .btn:hover {
-      background-color: #0056b3;
-    }
-
-    .contact a {
-      color: #007bff;
-    }
-
-    /* Make sure everything looks good on mobile */
-    @media (max-width: 600px) {
-      body {
-        padding: 1rem;
-      }
-
-      .container {
-        padding: 1.5rem;
-      }
-
-      h1 {
-        font-size: 2rem;
-      }
-
-      h2 {
-        font-size: 1.5rem;
-      }
-
-      .btn {
-        padding: 6px 12px;
-        font-size: 13px;
-      }
-    }
-  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <div class="container">
-    <h1>Portofolio Mufti Purwalaksana</h1>
-    <p>Saya seorang <strong>IT Support & Web Developer</strong> yang pernah bekerja di <a href="https://remula-inti.com/" target="_blank">PT Remula</a>.</p>
+<body class="bg-gray-100 text-gray-800 flex items-center justify-center min-h-screen p-4">
+  <div class="bg-white rounded-xl shadow-lg max-w-3xl w-full p-6 sm:p-10">
+    <h1 class="text-3xl sm:text-4xl font-bold text-center mb-6">Portofolio Mufti Purwalaksana</h1>
+    <p class="text-center mb-4">Saya seorang <strong>IT Support & Web Developer</strong> pernah bekerja di 
+      <a href="https://remula-inti.com/" class="text-blue-600 hover:underline" target="_blank">PT Remula</a>.
+    </p>
 
-    <h2>🧰 Skill</h2>
-    <ul>
+    <h2 class="text-2xl font-semibold mt-8 mb-4">🧰 Skill</h2>
+    <ul class="list-disc list-inside space-y-1">
       <li>HTML, CSS, JavaScript</li>
       <li>React, Laravel, PHP</li>
       <li>MySQL, Git, GitHub, WordPress</li>
       <li>REST API, Tailwind CSS, Bootstrap</li>
     </ul>
 
-    <h2>📜 Sertifikat</h2>
-    <ul>
+    <h2 class="text-2xl font-semibold mt-8 mb-4">📜 Sertifikat</h2>
+    <ul class="space-y-4">
       <li>
-        Responsive Web Design – freeCodeCamp<br />
-        <a class="btn" href="https://www.freecodecamp.org/certification/fccfc107e90-7772-49db-a0db-04f5eb78935a/responsive-web-design" target="_blank">Lihat Sertifikat</a>
+        <div>Responsive Web Design – freeCodeCamp</div>
+        <a class="inline-block mt-1 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded text-sm"
+           href="https://www.freecodecamp.org/certification/fccfc107e90-7772-49db-a0db-04f5eb78935a/responsive-web-design" target="_blank">
+          Lihat Sertifikat
+        </a>
       </li>
       <li>
-        JavaScript Algorithms and Data Structures – freeCodeCamp<br />
-        <a class="btn" href="https://www.freecodecamp.org/certification/fccfc107e90-7772-49db-a0db-04f5eb78935a/javascript-algorithms-and-data-structures-v8" target="_blank">Lihat Sertifikat</a>
+        <div>JavaScript Algorithms and Data Structures – freeCodeCamp</div>
+        <a class="inline-block mt-1 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded text-sm"
+           href="https://www.freecodecamp.org/certification/fccfc107e90-7772-49db-a0db-04f5eb78935a/javascript-algorithms-and-data-structures-v8" target="_blank">
+          Lihat Sertifikat
+        </a>
       </li>
       <li>
-        Profil – CodePolitan<br />
-        <a class="btn" href="https://www.codepolitan.com/coders/Mufti16/" target="_blank">Lihat Profil</a>
+        <div>Profil – CodePolitan</div>
+        <a class="inline-block mt-1 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded text-sm"
+           href="https://www.codepolitan.com/coders/Mufti16/" target="_blank">
+          Lihat Profil
+        </a>
       </li>
     </ul>
 
-    <h2>💼 Pengalaman Kerja</h2>
-    <ul>
+    <h2 class="text-2xl font-semibold mt-8 mb-4">💼 Pengalaman Kerja</h2>
+    <ul class="space-y-4">
       <li>
         <strong>IT Support – PT Remula</strong> (2016 – 2021)<br />
         Menangani permasalahan teknis internal, pemeliharaan sistem, dan mendukung infrastruktur IT perusahaan.
@@ -163,17 +60,17 @@
       </li>
     </ul>
 
-    <h2>🔨 Proyek</h2>
-    <ul>
-      <li><a href="https://github.com/muftip/Remula-gudang" target="_blank">📦 Remula Gudang – Aplikasi Pergudangan</a></li>
-      <li><a href="https://github.com/muftip/absensi" target="_blank">🕒 Absensi – Sistem Kehadiran Karyawan</a></li>
-      <li><a href="https://github.com/muftip" target="_blank">🔗 Lihat semua proyek di GitHub</a></li>
+    <h2 class="text-2xl font-semibold mt-8 mb-4">🔨 Proyek</h2>
+    <ul class="space-y-2">
+      <li><a class="text-blue-600 hover:underline" href="https://github.com/muftip/Remula-gudang" target="_blank">📦 Remula Gudang – Aplikasi Pergudangan</a></li>
+      <li><a class="text-blue-600 hover:underline" href="https://github.com/muftip/absensi" target="_blank">🕒 Absensi – Sistem Kehadiran Karyawan</a></li>
+      <li><a class="text-blue-600 hover:underline" href="https://github.com/muftip" target="_blank">🔗 Lihat semua proyek di GitHub</a></li>
     </ul>
 
-    <h2>✉️ Kontak</h2>
-    <div class="contact">
-      <p>Email: <a href="mailto:muftipurwalaksana5@gmail.com">muftipurwalaksana5@gmail.com</a></p>
-      <p>GitHub: <a href="https://github.com/muftip" target="_blank">github.com/muftip</a></p>
+    <h2 class="text-2xl font-semibold mt-8 mb-4">✉️ Kontak</h2>
+    <div class="space-y-2">
+      <p>Email: <a class="text-blue-600 hover:underline" href="mailto:muftipurwalaksana5@gmail.com">muftipurwalaksana5@gmail.com</a></p>
+      <p>GitHub: <a class="text-blue-600 hover:underline" href="https://github.com/muftip" target="_blank">github.com/muftip</a></p>
     </div>
   </div>
 </body>
